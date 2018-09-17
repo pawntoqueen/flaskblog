@@ -1,0 +1,65 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}
+GİRİŞ YAP VEYA KAYDOL
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+{% endblock %}
+
+{% block content %}
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <h1><class="navbar-brand" href="#">pearly</h1>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a href="login">giriş yap</a>
+      </li>
+        <br>
+      <li class="nav-item">
+        <a href= "signup">.   kaydol</a>
+      </li>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<hr>
+<br>
+
+<div class="row placeholders">
+  <div class="col-xs-6 col-sm-3 placeholder">
+    <a href="{{url_for('pr1')}}"> <img src="https://image.evmanya.com/i/fit-in/600x600/images/000/938/239/original/3d-light-fx-3d-lisansli-ninja-kaplumbagalar-raphael-maske-gece-lambasi.jpg" width="200" height="200" class="img-responsive" alt="proje 1"></a>
+    <h4>proje 1</h4>
+    <span class="text-muted">proje 1</span>
+  </div>
+  <div class="col-xs-6 col-sm-3 placeholder">
+    <a href="{{url_for('pr2')}}"> <img src="https://i.ytimg.com/vi/L4ExjdTJW2k/maxresdefault.jpg" width="300" height="200" class="img-responsive" alt="proje 2"></a>
+    <h4>proje 2</h4>
+    <span class="text-muted">proje 2</span>
+  </div>
+  <div class="col-xs-6 col-sm-3 placeholder">
+    <a href="{{url_for('pr3')}}"> <img src="https://i.ytimg.com/vi/GAJEucftRZU/maxresdefault.jpg" width="300" height="200" class="img-responsive" alt="proje 3"></a>
+    <h4>proje 3</h4>
+    <span class="text-muted">proje 3</span>
+  </div>
+  <div class="col-xs-6 col-sm-3 placeholder">
+   <a href="{{url_for('pr4')}}"><img src="https://image.evmanya.com/i/fit-in/600x600/images/001/011/082/original/necotoys-3d-lisansli-ninja-kaplumbagalar-donatello-maske-gece-lambasi.jpg" width="200" height="200" class="img-responsive" alt="proje 4"></a>
+    <h4>proje 4</h4>
+    <span class="text-muted">proje 4</span>
+  </div>
+</div>
+
+
+
+{% endblock %}
